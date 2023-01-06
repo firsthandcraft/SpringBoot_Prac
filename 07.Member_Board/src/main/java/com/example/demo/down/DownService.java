@@ -17,6 +17,9 @@ public class DownService {
 	public List getFiles() {
 		return mapper.getAll();
 	}
+	public void delFile(int num) {
+		 mapper.delFile(num);
+	}
 	public void ediotFileInfo(DownFile f) {
 		mapper.editFile(f);
 	}

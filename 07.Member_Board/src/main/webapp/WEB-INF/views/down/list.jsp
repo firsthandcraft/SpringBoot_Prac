@@ -5,10 +5,34 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>Insert title here</title>
+<title>list</title>
 </head>
 <body>
+<h3>자료실</h3>
 
+<a href="${pageContext.request.contextPath}/down.form">자료올리기</a>
+<c:if test="${empty list}">
+<p>자료없다.</p>
+</c:if>
+
+<c:if test="${not empty list}">
+	<table border="1" cellspacing="0">
+		<tr>
+			<th>num</th>
+			<th>title</th>
+			<th>date</th>
+			<th>다운수</th>
+		</tr>
+		<c:forEach var="f" items="${list}">
+			<tr>
+				<td>${f.num}</td>
+				<td><a href="${pageContext.request.contextPath}/down/read?num=${f.num}">${f.title}</a></td>
+				<td>${f.up_date}</td>
+				<td>${f.hit}</td>
+			</tr>
+		</c:forEach>
+	</table>
+</c:if>
 </body>
 </html>
 
