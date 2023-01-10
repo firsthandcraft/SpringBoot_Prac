@@ -1,4 +1,4 @@
-package com.study.springboot;
+package com.example.demo.member;
 
 public class Member {
 	private String id;
