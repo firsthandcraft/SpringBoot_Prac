@@ -9,7 +9,7 @@
 </head>
 <body>
 <h3>¸â¹ö ¸ñ·Ï</h3>
-<c:forEach var="m" items="${list }">
+<c:forEach var="m" items="${list}">
 ${m.id } / ${m.pwd } / ${m.name } / ${m.email } <br/>
 </c:forEach>
 </body>
