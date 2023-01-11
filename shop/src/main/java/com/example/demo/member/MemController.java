@@ -98,4 +98,8 @@ public class MemController {
 	public String adminPage() {
 		return "member/adminPage";
 	}
+	@RequestMapping(value="/member/prodPage")
+	public String prodPage() {
+		return "member/prodPage";
+	}
 }

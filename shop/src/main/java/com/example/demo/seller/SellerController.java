@@ -38,4 +38,8 @@ public class SellerController {
 		mav.addObject("list",list);
 		return mav;
 	}
+	@RequestMapping(value="/seller/form")
+	public void form() {
+		
+	}
 }

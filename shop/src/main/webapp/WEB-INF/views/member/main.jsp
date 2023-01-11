@@ -15,6 +15,9 @@ ${sessionScope.id}님 로그인 상태 </p>
 <a href="${pageContext.request.contextPath}/member/logout">로그아웃</a>
 <a href="${pageContext.request.contextPath}/member/out">탈퇴</a>
 
+<c:if test="${sessionScope.type==2}">
+	<c:set var="path" value="/seller/myList"/>
+</c:if>
 <c:if test="${sessionScope.type==3}">
 	<c:set var="path" value="/member/adminPage"/>
 </c:if>
