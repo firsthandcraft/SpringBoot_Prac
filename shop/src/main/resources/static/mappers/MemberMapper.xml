@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.member.MemberMapper">
+	<resultMap id="MemberResult" type="com.example.demo.member.Member">
+		<result column="id" property="id"></result>
+		<result column="pwd" property="pwd"></result>
+		<result column="name" property="name"></result>
+		<result column="tel" property="tel"></result>
+		<result column="address" property="address"></result>
+		<result column="type" property="type"></result>
+	</resultMap>
+</mapper>
+
+<select id="select" resultMap="MemberResult" parameterType="String">
+	select * from shopmember where id= #{id}
+</select>
+
+<insert id="insert" parameterType="com.example.demo.member.Member">
+	insert into shopmember values=(#{id},#{pwd},#{name},#{tel},#{address},#{type})
+</insert>
+
+<update id="update" parameterType="com.example.demo.member.Member">
+update shopmember
+set
+pwd=#{pwd} ,name=#{name},tel=#{tel},address=#{address}
+where id=#{id}
+</update>
+
+<delete id="delete" parameterType="String">
+delete shopmember
+where id=#{id}
+</delete>
