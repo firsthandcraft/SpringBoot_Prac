@@ -13,14 +13,14 @@
 <br />
 file-> new -> other -> springboot -> Spring  Starter Project
 
-img
+![01](https://github.com/firsthandcraft/SpringBoot_Prac/assets/97497153/7eb7dcfa-fc2c-4b53-85b7-849ce8611ce0)
 
 <br />
 프로젝트가 생성이 되면 
 
 src/main/java 에서 오른쪽버튼 new -> class생성 -> 위치와 폴더이름을 만들고 
-
-img
+![2](https://github.com/firsthandcraft/SpringBoot_Prac/assets/97497153/a3aa9a34-1402-4923-ac54-cd1c7ab254e5)
+![03](https://github.com/firsthandcraft/SpringBoot_Prac/assets/97497153/fef6bf51-2a5b-4803-94b4-977eed7ddc51)
 
 만든 폴더에서 아래와 같이 쓴다. 
 ```
@@ -35,22 +35,22 @@ public class UsrHomeController {
 ```
 ctrl + shift + o 눌러서 자동 import 하고 
 
-
 applicationproperties에서 서버 를 변경 
 ```
 server/port=8011
 ```
 
-img
- 
  bootdashboard버튼을 눌러 해당 프로젝트를 실행하면 8011서버로 실행이 된다.
+ ![07](https://github.com/firsthandcraft/SpringBoot_Prac/assets/97497153/cd59621f-4a96-420e-b3cd-e2a0dab5fab3)
+
+![06](https://github.com/firsthandcraft/SpringBoot_Prac/assets/97497153/4ffb5182-7842-4abf-a936-9d19f74fdfda)
 
  chrome을 키고 
  ```
  http://localhost:8011/usr/home/main
  ```
  전에 매핑한 주소로 가면 
- img
+ ![05](https://github.com/firsthandcraft/SpringBoot_Prac/assets/97497153/bd2ccd1e-7cc9-483f-a1d5-3e08a3ddfa66)
 
 ---
 
